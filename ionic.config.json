@@ -1,6 +1,8 @@
 {
   "name": "RegObs",
-  "app_id": "81fedcee",
+  "integrations": {
+    "cordova": {}
+  },
   "gulpStartupTasks": [
     "default",
     "watch"
@@ -18,5 +20,6 @@
       "path": "/prodapi",
       "proxyUrl": "https://api.nve.no/hydrology/regobs/webapi_latest"
     }
-  ]
+  ],
+  "pro_id": "81fedcee"
 }
