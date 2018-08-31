@@ -11,6 +11,8 @@
 
 .platform-ios .map-search {
     top: 72px;
+    top: calc(constant(safe-area-inset-top) + 48px);
+    top: calc(env(safe-area-inset-top) + 48px);
 }
 
 .search-bar-popup .popup {
@@ -37,6 +39,8 @@
 
 .platform-ios .search-bar-popup .popup {
     top: 72px;
+    top: calc(constant(safe-area-inset-top) + 48px);
+    top: calc(env(safe-area-inset-top) + 48px);
 }
 
 .search-bar-popup .popup .map-search {

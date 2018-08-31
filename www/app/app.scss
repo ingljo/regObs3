@@ -31,6 +31,36 @@ $darkGrey: #9B9B9B;
     //background-color: $ice;
 }
 
+.platform-ios.platform-cordova:not(.fullscreen) .has-header, .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {
+    top: 64px;
+    top: calc(constant(safe-area-inset-top) + 40px);
+    top: calc(env(safe-area-inset-top) + 40px);
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
+    height: 64px;
+    height: calc(constant(safe-area-inset-top) + 40px);
+    height: calc(env(safe-area-inset-top) + 40px);
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
+    margin-top: 20px;
+    margin-top: calc(constant(safe-area-inset-top) - 5px);
+    margin-top: calc(env(safe-area-inset-top) - 5px);
+}
+
+.platform-ios.platform-cordova {
+    map-menu ion-content {
+        padding-top: constant(safe-area-inset-top) !important;
+        padding-top: env(safe-area-inset-top) !important;
+    }
+
+    ion-view ion-content:not(.has-large-footer) {
+        padding-bottom: constant(safe-area-inset-bottom) !important;
+        padding-bottom: env(safe-area-inset-bottom) !important;
+    }
+}
+
 @media (min-width: 680px) {
     .modal {
         top: 0 !important;
@@ -42,15 +72,21 @@ $darkGrey: #9B9B9B;
 
     .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) > * {
         margin-top: 20px;
+        margin-top: calc(constant(safe-area-inset-top) - 5px);
+        margin-top: calc(env(safe-area-inset-top) - 5px);
     }
 
     .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) {
         height: 64px;
+        height: calc(constant(safe-area-inset-top) + 40px);
+        height: calc(env(safe-area-inset-top) + 40px);
     }
 
     .platform-ios.platform-cordova .modal-wrapper .modal .has-header,
     .platform-ios.platform-cordova .modal-wrapper .modal .bar-subheader {
         top: 64px;
+        top: calc(constant(safe-area-inset-top) + 40px);
+        top: calc(env(safe-area-inset-top) + 40px);
     }
 }
 
@@ -80,6 +116,8 @@ $darkGrey: #9B9B9B;
 
 .regobs-footer {
     height: $footerHeight;
+    height: calc(constant(safe-area-inset-bottom) + 115px);
+    height: calc(env(safe-area-inset-bottom) + 115px);
 }
 
 .regobs-next-prev-footer {
@@ -191,6 +229,8 @@ $darkGrey: #9B9B9B;
 
 .has-large-footer {
     bottom: $footerHeight !important;
+    bottom: calc(constant(safe-area-inset-bottom) + 115px) !important;
+    bottom: calc(env(safe-area-inset-bottom) + 115px) !important;
 }
 
 

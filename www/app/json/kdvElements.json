@@ -121,18 +121,23 @@
     ],
     "Dirt_LandSlideKDV": [
       {
+        "Id": 0,
+        "Name": "Ikke gitt ",
+        "Description": null
+      },
+      {
         "Id": 1,
         "Name": "Utglidning",
         "Description": null
       },
       {
         "Id": 2,
-        "Name": "Jordskred ",
+        "Name": "Jordskred",
         "Description": null
       },
       {
         "Id": 4,
-        "Name": "Flomskred ",
+        "Name": "Flomskred",
         "Description": null
       },
       {
@@ -142,7 +147,7 @@
       },
       {
         "Id": 6,
-        "Name": "Steinsprang ",
+        "Name": "Steinsprang",
         "Description": null
       },
       {
@@ -184,7 +189,7 @@
       },
       {
         "Id": 9,
-        "Name": "Annet (spesifiser) ",
+        "Name": "Annet (skriv i kommentar) ",
         "Description": null
       }
     ],
@@ -1234,18 +1239,18 @@
         "Description": null
       },
       {
-        "Id": 20,
-        "Name": "Kunstig utløst",
+        "Id": 26,
+        "Name": "Personutløst",
         "Description": null
       },
       {
-        "Id": 21,
-        "Name": "Ski eller skuter utløst",
+        "Id": 27,
+        "Name": "Skuterutløst",
         "Description": null
       },
       {
         "Id": 22,
-        "Name": "Ski eller skuter fjernutløst",
+        "Name": "Fjernutløst",
         "Description": null
       },
       {
@@ -1745,7 +1750,7 @@
     "Water_MeasurementReferenceKDV": [
       {
         "Id": 0,
-        "Name": "Ikke gitt",
+        "Name": "Ukjent",
         "Description": "Ukjent"
       },
       {
@@ -1782,28 +1787,33 @@
       },
       {
         "Id": 1,
-        "Name": "Terreng",
+        "Name": "i terreng",
         "Description": "Terreng"
       },
       {
         "Id": 2,
-        "Name": "Bro",
+        "Name": "på bro",
         "Description": "Bro"
       },
       {
         "Id": 3,
-        "Name": "Flomstøtte",
+        "Name": "på flomstøtte",
         "Description": "Flomstøtte"
       },
       {
         "Id": 4,
-        "Name": "Bygning",
+        "Name": "på bygning",
         "Description": "Bygning"
       },
       {
         "Id": 5,
-        "Name": "Påle",
+        "Name": "på påle",
         "Description": "Påle"
+      },
+      {
+        "Id": 6,
+        "Name": "på noe annet",
+        "Description": "på noe annet"
       }
     ],
     "Water_MarkingTypeKDV": [
@@ -1991,6 +2001,11 @@
         "Description": null
       },
       {
+        "Id": 13,
+        "Name": "Leteaksjon igangsatt",
+        "Description": null
+      },
+      {
         "Id": 15,
         "Name": "Trafikk hindret",
         "Description": null
@@ -2065,7 +2080,7 @@
       {
         "Id": 105,
         "Name": "A",
-        "Description": "Automatisert tjenste"
+        "Description": "Automatisert tjeneste"
       },
       {
         "Id": 200,
@@ -2237,28 +2252,38 @@
         "Description": null
       },
       {
-        "Id": 20,
-        "Name": "Ordinær ihht. obsavtale",
+        "Id": 60,
+        "Name": "Privat tur",
         "Description": null
       },
       {
-        "Id": 30,
-        "Name": "Tillegg ihht. obsavtale",
+        "Id": 55,
+        "Name": "Undervisning og kurs",
         "Description": null
       },
       {
-        "Id": 40,
-        "Name": "Bestilt ihht. obsavtale",
+        "Id": 70,
+        "Name": "Føring og guiding",
         "Description": null
       },
       {
         "Id": 50,
-        "Name": "Ansatt",
+        "Name": "Oppdrag for arbeidsgiver",
         "Description": null
       },
       {
-        "Id": 60,
-        "Name": "Privat",
+        "Id": 20,
+        "Name": "Ordinært oppdrag for skredvarslinga",
+        "Description": null
+      },
+      {
+        "Id": 30,
+        "Name": "Tilleggsoppdrag for skredvarslinga",
+        "Description": null
+      },
+      {
+        "Id": 40,
+        "Name": "Bestilt oppdrag for skredvarslinga",
         "Description": null
       }
     ],
@@ -2347,7 +2372,7 @@
       },
       {
         "Id": 2,
-        "Name": "Videresendt til historisk db ",
+        "Name": "Videresendt til historisk db",
         "Description": null
       },
       {

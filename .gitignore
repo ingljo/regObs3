@@ -21,3 +21,4 @@ secret.json
 simulation/
 /bin/iOS/Release
 /bld/iOS/Release
+/.vs/regObs3/DesignTimeBuild

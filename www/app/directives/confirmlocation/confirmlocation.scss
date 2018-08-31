@@ -27,6 +27,8 @@
     left: 0px;
     right: 0px;
     height: 80px;
+    height: calc(constant(safe-area-inset-bottom) + 80px);
+    height: calc(env(safe-area-inset-bottom) + 80px);
     background-color: white;
     z-index: 999;
     transition-property: all;
@@ -45,6 +47,8 @@
 
 .mark-position-in-map-info.show-details {
     height: 230px;
+    height: calc(constant(safe-area-inset-bottom) + 230px);
+    height: calc(env(safe-area-inset-bottom) + 230px);
 }
 
 .map-detail-left-column {
@@ -158,6 +162,8 @@
 
 .map-detail-wrapper {
     margin-top: 5px;
+    margin-top: calc(constant(safe-area-inset-bottom) + 5px) !important;
+    margin-top: calc(env(safe-area-inset-bottom) + 5px) !important;
 }
 
 .map-detail-line-wrapper {

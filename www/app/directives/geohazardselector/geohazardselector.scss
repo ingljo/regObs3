@@ -10,6 +10,8 @@
 
 .platform-ios .geo-selector {
     top: 72px;
+    top: calc(constant(safe-area-inset-top) + 48px);
+    top: calc(env(safe-area-inset-top) + 48px);
 }
 
 .geo-selector.selectable {

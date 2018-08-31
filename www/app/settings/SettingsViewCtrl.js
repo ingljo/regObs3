@@ -67,9 +67,12 @@ angular
 
         vm.refreshKdvElements = function () {
             vm.refreshingKdv = true;
-            Utility.refreshKdvElements()
+            Utility.refreshKdvElements()    
                 .then(function () {
-                    return HelpTexts.updateHelpTexts();
+                    return HelpTexts.updateHelpTexts().catch(function () {
+                           // Do nothing until CORS is enabled on api
+                        AppLogging.log('CORS has not been enabled on API for this call, so help text cannot be updated!');
+                    });
                 }).then(function () {
                     RegobsPopup.alert('Suksess!', 'Nedtrekkslister har blitt oppdatert.');
                 })

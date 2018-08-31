@@ -11,29 +11,41 @@
 
 .regobs-gps-center #floating-button {
     bottom: 90px !important;
+    bottom: calc(constant(safe-area-inset-bottom) + 90px) !important;
+    bottom: calc(env(safe-area-inset-bottom) + 90px) !important;
 }
 
 .hasFooter .regobs-gps-center #floating-button {
     //bottom: 147px !important;
     bottom: 197px !important;
+    bottom: calc(constant(safe-area-inset-bottom) + 197px) !important;
+    bottom: calc(env(safe-area-inset-bottom) + 197px) !important;
 }
 
 .regobs-menu #floating-button {
     bottom: 20px !important;
+    bottom: calc(constant(safe-area-inset-bottom) + 20px) !important;
+    bottom: calc(env(safe-area-inset-bottom) + 20px) !important;
 }
 
 .hasFooter .regobs-menu #floating-button {
     //bottom: 77px !important;
     bottom: 127px !important;
+    bottom: calc(constant(safe-area-inset-bottom) + 127px) !important;
+    bottom: calc(env(safe-area-inset-bottom) + 127px) !important;
 }
 
 .regobs-button-item-selected #floating-button {
     bottom: 50px !important;
+    bottom: calc(constant(safe-area-inset-bottom) + 50px) !important;
+    bottom: calc(env(safe-area-inset-bottom) + 50px) !important;
 }
 
 .hasFooter .regobs-button-item-selected #floating-button {
     //bottom: 115px !important;
     bottom: 165px !important;
+    bottom: calc(constant(safe-area-inset-bottom) + 165px) !important;
+    bottom: calc(env(safe-area-inset-bottom) + 165px) !important;
 }
 
 .regobs-button-tour #floating-button {

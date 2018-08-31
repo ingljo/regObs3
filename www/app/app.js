@@ -356,6 +356,7 @@
 
             if (window.StatusBar) {
                 StatusBar.styleLightContent();
+                StatusBar.overlaysWebView($ionicPlatform.isIOS());
             }
 
             document.addEventListener("deviceready", function () {
